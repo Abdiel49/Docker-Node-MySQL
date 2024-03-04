@@ -1,0 +1,8 @@
+# Utilizar la imagen oficial de MySQL
+FROM mysql:latest
+
+# Variables de entorno para configurar la base de datos
+ENV MYSQL_DATABASE notes
+
+# Copiar el script de inicialización de la base de datos al directorio de Docker-entrypoint-initdb.d
+COPY ./scripts-sql/ /docker-entrypoint-initdb.d/

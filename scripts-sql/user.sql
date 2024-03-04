@@ -1,0 +1,3 @@
+-- -- Crear usuario y otorgar privilegios
+-- CREATE USER 'smog3'@'localhost' IDENTIFIED BY 'holamundo';
+-- GRANT ALL PRIVILEGES ON nombre_basedatos.* TO 'smog2'@'localhost';
