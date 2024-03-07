@@ -6,7 +6,7 @@ Run:
 
 ```sh
 $ docker build -t mysql-db -f Dockerfile-mysql .
-$ docker run -d --name mysql-container -e MYSQL_ROOT_PASSWORD=password -p 3306:3306 mysql-db
+$ docker run -d --name mysql-test123 -e MYSQL_ROOT_PASSWORD=password -p 3333:3306 mysql-db
 ```
 
 ### MySQL - connect 
@@ -19,7 +19,7 @@ $ docker ps
 CONTAINER ID   IMAGE      COMMAND                  CREATED             STATUS             PORTS                               NAMES
 cf30bf29c90d   mysql-db   "docker-entrypoint.s…"   About an hour ago   Up About an hour   0.0.0.0:3306->3306/tcp, 33060/tcp   mysql-container
 
-$ docker exec -it cf30bf29c90d mysql -uroot -p
+$ bas
 Enter password:
 Welcome to the MySQL monitor.
 # ...

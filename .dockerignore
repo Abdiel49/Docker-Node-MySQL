@@ -1,4 +1,4 @@
-# compiled output
+ compiled output
 /node_modules
 
 commands
@@ -12,10 +12,3 @@ commands
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-
-# enviroment
-.env*
-!.env.example
-
-#DB
-db-data

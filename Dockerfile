@@ -1,12 +1,12 @@
-FROM node:latest
+FROM node:hydrogen
 
 WORKDIR /usr/src/app
 
-COPY package*.json ./
-RUN npm install
+COPY package*.json .
+RUN npm ci
 
 COPY . .
 
-EXPOSE ${PORT}
+EXPOSE ${NODE_PORT}
 
 CMD ["npm", "start"]

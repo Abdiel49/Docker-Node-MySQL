@@ -2,16 +2,18 @@
   "name": "nodemysql",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node src/app.js"
   },
   "author": "Abdiel49",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^4.18.3",
-    "mysql2": "^3.9.2"
+    "mysql2": "^3.9.2",
+    "pg": "^8.11.3"
   }
 }
