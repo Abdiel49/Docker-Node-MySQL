@@ -3,6 +3,7 @@ name: test
 services:
   database:
     image: postgres:14
+    container_name: mysql-db
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
@@ -20,6 +21,4 @@ services:
       - "3001:${NODE_PORT}"
     volumes:
       - ./:/usr/src/app
-networks:
-  app-network:
-    driver: bridge
+# 
